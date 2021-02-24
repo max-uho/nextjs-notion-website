@@ -8,6 +8,8 @@ export default class MyDocument extends Document {
       <IconContext.Provider value={{ style: { verticalAlign: 'middle' } }}>
         <Html lang='en'>
           <Head>
+          <link rel="preconnect" href="https://fonts.gstatic.com"/> 
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,500;0,800;1,500;1,800&family=Roboto:ital,wght@0,500;1,500&display=swap" rel="stylesheet"/>
             <link rel='shortcut icon' href='/favicon.png' />
 
             <link

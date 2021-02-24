@@ -10,8 +10,6 @@
 .notion {
   --notion-max-width: 720px;
   --notion-header-height: 54px;
-  background-color: rgb(22, 22, 22);
-  color:white;
   font-family:Helvetica, Arial, sans-serif;
 }
 
@@ -342,4 +340,15 @@
 .notion-bookmark:hover {
   border-image: linear-gradient(90.68deg, #b439df 0.26%, #e5337e 102.37%);
   border-image-slice: 1;
+}
+
+
+.notion {
+  --notion-max-width: 720px;
+  --notion-header-height: 54px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.notion-title {
+  font-family: 'JetBrains Mono', monospace;
 }
