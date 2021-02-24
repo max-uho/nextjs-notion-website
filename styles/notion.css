@@ -10,7 +10,8 @@
 .notion {
   --notion-max-width: 720px;
   --notion-header-height: 54px;
-  background-color: blue;
+  background-color: rgb(22, 22, 22);
+  font-family:Helvetica, Arial, sans-serif;
 }
 
 .notion-page {
@@ -47,6 +48,10 @@
   grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
   grid-gap: 6vmin;
   gap: 6vmin;
+}
+
+.notion-page-icon-wrapper {
+  display: block;
 }
 
 .notion-gallery-grid .notion-page-icon {
@@ -168,8 +173,7 @@
 }
 
 .notion-collection-row-property .notion-property {
-  display: flex;
-  justify-content: center;
+
 }
 
 .notion-collection-row-value {
