@@ -10,7 +10,6 @@
 .notion {
   --notion-max-width: 720px;
   --notion-header-height: 54px;
-  font-family:Helvetica, Arial, sans-serif;
 }
 
 .notion-page {
@@ -348,12 +347,12 @@
   --notion-max-width: 720px;
   --notion-header-height: 54px;
   font-family: 'Roboto', sans-serif;
-  font-weight: 300;
+  font-weight: 200;
 }
 
 .notion-title {
   font-family: 'JetBrains Mono', monospace;
-  font-weight: 500;
+
 }
 
 .notion-search-button {
