@@ -11,6 +11,7 @@
   --notion-max-width: 720px;
   --notion-header-height: 54px;
   background-color: rgb(22, 22, 22);
+  color:white;
   font-family:Helvetica, Arial, sans-serif;
 }
 
@@ -210,9 +211,11 @@
 }
 
 .notion-link:hover {
+  /*
   border-width: 3px;
   border-image: linear-gradient(90.68deg, #b439df 0.26%, #e5337e 102.37%);
   border-image-slice: 1;
+  */
 }
 
 .notion-red_background,
