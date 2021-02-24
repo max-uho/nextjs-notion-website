@@ -10,13 +10,18 @@
 .notion {
   --notion-max-width: 720px;
   --notion-header-height: 54px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 18px;
+  line-height: 30px;
+  
 }
 
 .notion-page {
   margin: 0 12px;
   width: var(--notion-max-width);
   padding-bottom: calc(max(5vh, 32px)) !important;
-  line-height: 1.65;
+  
+  
 
 }
 
@@ -346,12 +351,11 @@
 .notion {
   --notion-max-width: 720px;
   --notion-header-height: 54px;
-  font-family: 'Roboto', sans-serif;
   font-weight: 200;
 }
 
 .notion-title {
-  font-family: 'JetBrains Mono', monospace;
+  
 
 }
 
