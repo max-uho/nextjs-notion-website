@@ -342,13 +342,20 @@
   border-image-slice: 1;
 }
 
+/*_________________*/
 
 .notion {
   --notion-max-width: 720px;
   --notion-header-height: 54px;
   font-family: 'Roboto', sans-serif;
+  font-weight: 300;
 }
 
 .notion-title {
   font-family: 'JetBrains Mono', monospace;
+  font-weight: 500;
+}
+
+.notion-search-button {
+  display: none !important;
 }
