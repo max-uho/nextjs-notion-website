@@ -5,6 +5,8 @@ window.onload = function() {
 
 
     var np = $('.notion-page').first();
+    var npc = $(".notion-page-content");
+
     var found = [],
     rxp = /\[\^.*?\]/g,
     str = np.html(),
@@ -14,9 +16,9 @@ window.onload = function() {
         found.push(curMatch[0]);
     }
 
-    console.log(found)
-
     var f_number = 0;
+
+    if (str != null){
 
     str = str.replace(rxp, function() {
         ++f_number;
@@ -26,30 +28,30 @@ window.onload = function() {
 
     np.html(str);
 
-    $(".notion-page-content").append( "<section class=footnotes role=doc-endnotes>\
-        <hr>\
+    
+
+    npc.append( '<section class="footnotes" role="doc-endnotes">\
         <ol>\
-        " );
+        ');
 
     var arrayLength = found.length;
     for (var i = 0; i < arrayLength; i++) {
         var clean_note = found[i].slice(2,-1);
         f_note_content = '\
-                <li id=fn:'+(i+1).toString()+' role=doc-endnote>\
+                <li id=fn:'+(i+1).toString()+' role="doc-endnote">\
                     <p>\
                         '+clean_note+'\
-                        <a href=#fnref:'+(i+1).toString()+' class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a>\
+                        <a href=#fnref:'+(i+1).toString()+' class="footnote-backref" role="doc-backlink">&#8617;&#xfe0e;</a>\
                     </p>\
-                </li>\
-        ';
-
-
-        $(".notion-page-content").append(f_note_content);
+                </li>';
+        
+        npc.append(f_note_content);
         //Do something
     }
 
-    $(".notion-page-content").append( "</ol>\
+    npc.append( "</ol>\
           </section>\
         " );
+    }
 
 };
