@@ -1,4 +1,3 @@
-
 // VERY HACKY FOOTNOTES
 
 window.onload = function() {
@@ -28,30 +27,16 @@ window.onload = function() {
 
     np.html(str);
 
-    
-
-    npc.append( '<section class="footnotes" role="doc-endnotes">\
-        <ol>\
-        ');
+    npc.append('<section class="footnotes" role="doc-endnotes"><ol>');
 
     var arrayLength = found.length;
     for (var i = 0; i < arrayLength; i++) {
         var clean_note = found[i].slice(2,-1);
-        f_note_content = '\
-                <li id=fn:'+(i+1).toString()+' role="doc-endnote">\
-                    <p>\
-                        '+clean_note+'\
-                        <a href=#fnref:'+(i+1).toString()+' class="footnote-backref" role="doc-backlink">&#8617;&#xfe0e;</a>\
-                    </p>\
-                </li>';
-        
+        f_note_content = '<li id=fn:'+(i+1).toString()+' role="doc-endnote"><p>'+clean_note+'<a href=#fnref:'+(i+1).toString()+' class="footnote-backref" role="doc-backlink">&#8617;&#xfe0e;</a></p></li>';
         npc.append(f_note_content);
-        //Do something
     }
 
-    npc.append( "</ol>\
-          </section>\
-        " );
+    npc.append( '</ol></section>');
     }
 
 };
