@@ -41,10 +41,10 @@ export default class MyDocument extends Document {
 
           <body>
             <script src='noflash.js' />
+            <script src='jquery.js'/>
             <Main />
 
             <NextScript />
-            <script src='jquery.js'/>
             <script src='footnotes.js'/>
           </body>
         </Html>
