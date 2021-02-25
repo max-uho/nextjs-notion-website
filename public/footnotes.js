@@ -4,7 +4,7 @@ window.onload = function() {
 
 
     var np = $('.notion-page').first();
-    var npc = $(".notion-page-content");
+
 
     var found = [],
     rxp = /\[\^.*?\]/g,
@@ -27,6 +27,7 @@ window.onload = function() {
 
     np.html(str);
 
+    var npc = $('.notion-page-content').first();
     npc.append('<section class="footnotes" role="doc-endnotes"><ol>');
 
     var arrayLength = found.length;
