@@ -9,11 +9,7 @@
 
 .notion {
   --notion-max-width: 720px;
-  --notion-header-height: 54px;
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 18px;
-  line-height: 30px;
-  
+  --notion-header-height: 54px;  
 }
 
 .notion-page {
@@ -348,17 +344,24 @@
 
 /*_________________*/
 
-.notion {
-  --notion-max-width: 720px;
-  --notion-header-height: 54px;
-  font-weight: 200;
-}
-
-.notion-title {
-  
-
-}
-
 .notion-search-button {
   display: none !important;
 }
+
+.notion-header{
+  border-bottom: solid 3px;
+}
+
+/*
+
+.notion {
+  font-weight: 200;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+*/
+
+
+
