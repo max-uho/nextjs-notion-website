@@ -1,6 +1,11 @@
 import React from 'react'
 import Document, { Html, Head, Main, NextScript } from 'next/document'
 import { IconContext } from 'react-icons'
+import ReactDOM from 'react-dom'
+
+
+
+
 
 export default class MyDocument extends Document {
   render() {
@@ -43,9 +48,11 @@ export default class MyDocument extends Document {
             <script src='noflash.js' />
             <script src='jquery.js'/>
             <Main />
-
-            <NextScript />
+           
             <script src='footnotes.js'/>
+            <NextScript />
+            
+            
           </body>
         </Html>
       </IconContext.Provider>
