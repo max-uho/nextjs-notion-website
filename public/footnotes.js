@@ -22,24 +22,26 @@ window.onload = function () {
         str = str.replace(rxp, function () {
             ++f_number;
             fs_number = f_number.toString();
-            return '<sup id="fnref:' + fs_number + '"><a href="#fn:' + fs_number + '" class="footnote-ref" role="doc-noteref">' + fs_number + '</a></sup>';
+            return '<sup id="fnref:notes"><a href="#fn:notes" class="footnote">' + fs_number + '</a></sup>';
         });
 
         np.html(str);
 
-        var npc = $('.notion-aside').first();
+
+        var npc = $('.notion-page').first();
         npc.append('<section class="footnotes" role="doc-endnotes"><ol>');
 
         var arrayLength = found.length;
         for (var i = 0; i < arrayLength; i++) {
             var clean_note = found[i].slice(2, -1);
-            f_note_content = '<li id=fn:' + (i + 1).toString() + ' role="doc-endnote"><p>' + clean_note + '<a href=#fnref:' + (i + 1).toString() + ' class="footnote-backref" role="doc-backlink">&#8617;&#xfe0e;</a></p></li>';
+            f_note_content = '<li class="sidenote-class" id=fn:' + (i + 1).toString() + ' role="doc-endnote"><p>' + clean_note + '<a href=#fnref:' + (i + 1).toString() + ' class="footnote-backref" role="doc-backlink">&#8617;&#xfe0e;</a></p></li>';
             npc.append(f_note_content);
         }
 
         npc.append('</ol></section>');
-    }
 
-    //np.sidenotes();
 
-};
+
+    $('.notion-page').sidenotes();
+
+};}

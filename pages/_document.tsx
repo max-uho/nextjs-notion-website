@@ -48,7 +48,7 @@ export default class MyDocument extends Document {
             <script src='noflash.js' />
             <script src='jquery.js'/>
             <Main />
-           
+            <script src='jquery.sidenotes.js'/>           
             <script src='footnotes.js'/>
             <NextScript />
             
