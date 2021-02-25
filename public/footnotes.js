@@ -40,4 +40,6 @@ window.onload = function() {
     npc.append( '</ol></section>');
     }
 
+    np.sidenotes();
+
 };
