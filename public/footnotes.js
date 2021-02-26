@@ -28,7 +28,7 @@ window.onload = function () {
         np.html(str);
 
         var npc = np;
-        var allnotes = '<section class="footnotes" role="doc-endnotes"><ol>';
+        var allnotes = '<div class="footnotes"><ol>';
 
         var arrayLength = found.length;
         
@@ -37,7 +37,7 @@ window.onload = function () {
             f_note_content = '<li id=fn:note' + (i + 1).toString() + ' role="doc-endnote"><p>' + clean_note + '<a href=#fnref:note' + (i + 1).toString() + ' class="footnote-backref" role="doc-backlink">&#8617;&#xfe0e;</a></p></li>';
             allnotes = allnotes+f_note_content;
         }
-        allnotes = allnotes+'</ol></section>'
+        allnotes = allnotes+'</ol></div>'
 
         npc.append(allnotes);
     }
