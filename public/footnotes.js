@@ -28,16 +28,18 @@ window.onload = function () {
         np.html(str);
 
         var npc = $('.notion-page').first();
-        npc.append('<section class="footnotes" role="doc-endnotes"><ol>');
+        var allnotes = '<section class="footnotes" role="doc-endnotes"><ol>';
 
         var arrayLength = found.length;
+        
         for (var i = 0; i < arrayLength; i++) {
             var clean_note = found[i].slice(2, -1);
             f_note_content = '<li id=fn:note' + (i + 1).toString() + ' role="doc-endnote"><p>' + clean_note + '<a href=#fnref:note' + (i + 1).toString() + ' class="footnote-backref" role="doc-backlink">&#8617;&#xfe0e;</a></p></li>';
-            npc.append(f_note_content);
+            allnotes = allnotes+f_note_content;
         }
+        allnotes = allnotes+'</ol></section>'
 
-        npc.append('</ol></section>');
+        npc.append(allnotes);
     }
 
     np.sidenotes();
