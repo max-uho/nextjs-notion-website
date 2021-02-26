@@ -42,4 +42,4 @@ window.onload = function () {
 
     np.sidenotes();
 
-};}
+};
