@@ -22,12 +22,12 @@ window.onload = function () {
         str = str.replace(rxp, function () {
             ++f_number;
             fs_number = f_number.toString();
-            return '<sup id="fnref:' + fs_number + '"><a href="#fn:' + fs_number + '" class="footnote-ref" role="doc-noteref">' + fs_number + '</a></sup>';
+            return '<sup id="fnref:note' + fs_number + '"><a href="#fn:note' + fs_number + '" class="footnote-ref" role="doc-noteref">' + fs_number + '</a></sup>';
         });
 
         np.html(str);
 
-        var npc = $('.notion-aside').first();
+        var npc = $('.notion-page').first();
         npc.append('<section class="footnotes" role="doc-endnotes"><ol>');
 
         var arrayLength = found.length;
