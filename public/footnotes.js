@@ -3,7 +3,7 @@
 window.onload = function () {
 
 
-    var np = $('.notion-page').first();
+    var np = $('.notion-page-content-inner').first();
 
 
     var found = [],
@@ -27,7 +27,7 @@ window.onload = function () {
 
         np.html(str);
 
-        var npc = $('.notion-page').first();
+        var npc = np;
         var allnotes = '<section class="footnotes" role="doc-endnotes"><ol>';
 
         var arrayLength = found.length;
