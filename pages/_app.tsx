@@ -22,6 +22,8 @@ import 'react-static-tweets/styles.css'
 
 // global style overrides for notion
 import 'styles/notion.css'
+// global style for sidenotes
+import 'styles/sidenotes.css'
 
 // global style overrides for prism theme (optional)
 import 'styles/prism-theme.css'
