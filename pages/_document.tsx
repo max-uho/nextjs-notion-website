@@ -1,10 +1,6 @@
 import React from 'react'
 import Document, { Html, Head, Main, NextScript } from 'next/document'
 import { IconContext } from 'react-icons'
-import ReactDOM from 'react-dom'
-
-
-
 
 
 export default class MyDocument extends Document {
@@ -47,11 +43,12 @@ export default class MyDocument extends Document {
           <body>
             <script src='noflash.js' />
             <script src='jquery.js'/>
+            <script src='jquery.sidenotes.js'/>
             <Main />
-            <script src='jquery.sidenotes.js'/>           
-            <script src='footnotes.js'/>
-            <NextScript />
             
+            <script async src='footnotes.js'/>           
+            
+            <NextScript />          
             
           </body>
         </Html>
@@ -59,3 +56,4 @@ export default class MyDocument extends Document {
     )
   }
 }
+
