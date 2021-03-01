@@ -43,6 +43,11 @@ window.onload = function () {
         npc.append(allnotes);
     }
 
-    //np.sidenotes();
+    np.sidenotes();
     // I'll turn on sidenotes when I have figure out the css to it
+    $(window).on('resize', function(){
+        var win = $(this); //this = window
+        if (win.width() >= 1360) { np.sidenotes('show'); }else { np.sidenotes('hide') } 
+    });
 };
+

@@ -356,6 +356,16 @@ use this to differentiate home page.
   border-bottom: solid 3px;
 }
 
+.notion-page-content-inner{
+  display: unset;/*important for sidenotes*/
+}
+
+
+
+.notion-page-scroller{
+  /*align-items: unset;*/
+}
+
 /*
 
 .notion {
