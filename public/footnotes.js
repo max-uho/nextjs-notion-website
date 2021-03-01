@@ -49,5 +49,5 @@ window.onload = function () {
 
 $(window).on('load resize', function(){
     var win = $(this); //this = window
-    if (win.width() >= 1360) { np.sidenotes('show'); }else { np.sidenotes('hide') } 
+    if (win.width() >= 1200) { np.sidenotes('show'); }else { np.sidenotes('hide') } 
 });

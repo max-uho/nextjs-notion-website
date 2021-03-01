@@ -1,6 +1,6 @@
 /* SIZING ON BIGGER SCREENS */
 
-@media (min-width: 1360px) {
+@media (min-width: 50rem) {
   .notion-page-content-inner aside {
     float: left;
     clear: left;
@@ -8,6 +8,13 @@
     margin-right: -12.5rem;
     position: relative;
     right: 13rem;
+  }
+}
+
+@media (max-width: 60rem){
+  .notion-page-scroller{
+    align-items: flex-end;
+    margin-left: 1rem;
   }
 }
 

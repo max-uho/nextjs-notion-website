@@ -12,7 +12,7 @@
  }
 
 .notion {
-  --notion-max-width: 30rem;
+  --notion-max-width: 36rem;
   --notion-header-height: 2rem;
   background-color: rgb(14, 14, 14)!important; 
   color: rgb(207, 207, 207)!important; 
@@ -279,6 +279,7 @@ use this to differentiate home page.
 .notion-page-content-inner{
   display: unset;/*important for sidenotes*/
 }
+
 
 .notion {
   font-weight:400;
