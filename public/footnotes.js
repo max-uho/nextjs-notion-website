@@ -1,10 +1,12 @@
 // VERY HACKY FOOTNOTES
 
+var np = $('.notion-page-content-inner').first();
+
 window.onload = function () {
 
     $('.notion-aside').remove(); //cleanup useless socials
 
-    var np = $('.notion-page-content-inner').first();
+    
 
 
     var found = [],
@@ -45,9 +47,10 @@ window.onload = function () {
 
     np.sidenotes();
     // I'll turn on sidenotes when I have figure out the css to it
-    $(window).on('resize', function(){
-        var win = $(this); //this = window
-        if (win.width() >= 1360) { np.sidenotes('show'); }else { np.sidenotes('hide') } 
-    });
+    
 };
 
+$(window).on('load resize', function(){
+    var win = $(this); //this = window
+    if (win.width() >= 1360) { np.sidenotes('show'); }else { np.sidenotes('hide') } 
+});
