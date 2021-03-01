@@ -1,38 +1,43 @@
-a {
-  text-decoration: none
+/* SIZING ON BIGGER SCREENS */
+
+@media (min-width: 1360px) {
+  .notion-page-content-inner aside {
+    float: left;
+    clear: left;
+    width: 12.5rem;
+    margin-right: -12.5rem;
+    position: relative;
+    right: 13rem;
+  }
 }
 
-a:hover {
-  text-decoration: underline
+
+/* STYLING SIDE NOTES */
+
+sup, sub {
+  vertical-align: baseline;
+  position: relative;
+  top: -0.4em;
 }
-
-
-a {
-  color: #186ad4
+sub { 
+  top: 0.4em; 
 }
-
-a:hover {
-  color: #186ad4
-}
-
 
 .sidenote {
   border-right: solid 1px;
+  top: 2rem; /*about the height of the breadcrumbs*/
 }
 
 .notion-page-content-inner aside, .notion-page-content-inner .footnotes {
-  font-size: 16px;
-  font-size: 0.88889rem;
-  line-height: 28px;
-  line-height: 1.55556rem;
-  padding: 14px;
+  font-size: .8rem;
+  line-height: 1;
   padding: 0.77778rem
 }
 
 .notion-page-content-inner .footnotes>ol {
-  padding-left: 1em;
-  margin-top: 28px;
-  margin-top: 1.55556rem
+  padding-left: 1rem;
+  margin-top: 2rem;
+  margin-top: 1rem
 }
 
 /*
@@ -43,14 +48,11 @@ a:hover {
 
 .notion-page-content-inner aside .ref-mark {
   float: left;
-  margin-right: 0.4em;
-  font-size: 14px;
-  font-size: 0.77778rem;
-  line-height: 28px;
-  line-height: 1.55556rem;
+  margin-right: 0.4rem;
+  font-size: .8rem;
+  line-height: 1;
   position: relative;
-  top: -5px;
-  top: -0.27778rem
+  top: -.5rem;
 }
 
 .notion-page-content-inner aside .ref-mark+* {
@@ -71,13 +73,3 @@ a:hover {
 */
 
 
-@media (min-width: 1360px) {
-  .notion-page-content-inner aside {
-    float: left;
-    clear: left;
-    width: 300px;
-    margin-right: -300px;
-    position: relative;
-    right: 320px;
-  }
-}

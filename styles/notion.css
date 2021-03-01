@@ -7,9 +7,15 @@
  * places to add some flare.
  */
 
+ :root{
+  font-size: 24px;
+ }
+
 .notion {
-  --notion-max-width: 720px;
-  --notion-header-height: 54px;  
+  --notion-max-width: 30rem;
+  --notion-header-height: 2rem;
+  background-color: rgb(14, 14, 14)!important; 
+  color: rgb(207, 207, 207)!important; 
 }
 
 .notion-page {
@@ -30,7 +36,7 @@ use this to differentiate home page.
 }
 
 .notion-text {
-  padding: 0.5em 2px;
+  padding: 0.5rem 2px;
 }
 
 .notion-asset-caption {
@@ -38,13 +44,14 @@ use this to differentiate home page.
 }
 
 .notion-asset-wrapper {
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .notion-header .nav-header {
   max-width: 1100px;
   margin: 0 auto;
+  font-size: 1rem;
 }
 
 .notion-gallery-grid {
@@ -57,109 +64,21 @@ use this to differentiate home page.
   display: block;
 }
 
-.notion-gallery-grid .notion-page-icon {
-  display: none;
-}
-
-.notion-gallery-grid .notion-page-title-text {
-  font-size: 2em;
-  white-space: unset;
-}
-
-.notion-gallery-grid .notion-collection-card-property {
-  white-space: unset;
-  text-overflow: unset;
-}
-
-.notion-gallery-grid .notion-property-text {
-  font-size: 14px;
-}
-
-.notion-collection-card {
-  border-radius: 16px;
-  box-shadow: none;
-}
-
-.notion-collection-card-cover img {
-  border-radius: 16px;
-}
-
-.notion-collection-card {
-  overflow: visible;
-}
-
-.notion-collection-card-cover {
-  border-radius: 16px;
-  overflow: visible;
-  box-shadow: 2px 2px 8px 4px rgba(15, 15, 15, 0.1);
-}
-
-.notion-collection-card-cover {
-  border-bottom: 0 none;
-  transition: filter 150ms linear;
-  filter: none;
-}
-
-.notion-collection-card:hover .notion-collection-card-cover {
-  filter: brightness(120%);
-}
-
-/* only target safari */
-@media screen and (-webkit-min-device-pixel-ratio: 0) {
-  _::-webkit-full-page-media,
-  _:future,
-  :root,
-  .notion-collection-card-cover {
-    transition: none 0ms linear;
-  }
-}
-
 .notion-quote {
-  padding: 0.2em 0.75em;
-  font-size: 1.1em;
+  padding: 0.2rem 0.75rem;
+  font-size: 1.1rem;
 }
 
-.notion-h1,
-.notion-h2,
-.notion-h3 {
-  margin-bottom: 0.25em;
-}
+
 
 .notion-callout {
-  margin: 0.75em 0;
+  margin: 0.75rem 0;
 }
 
 .notion-hr {
-  margin: 2em 0;
+  margin: 2rem 0;
 }
 
-@media only screen and (max-width: 920px) {
-  .index-page.notion-page {
-    padding-left: 2vw;
-    padding-right: 2vw;
-  }
-}
-
-@media only screen and (max-width: 720px) {
-  .notion-page {
-    padding-left: 2vw;
-    padding-right: 2vw;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .notion-search-button {
-    display: none !important;
-  }
-}
-
-@media only screen and (max-width: 400px) {
-  .notion-gallery-grid {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-gap: 10vmin;
-    gap: 10vmin;
-  }
-}
 
 .notion .notion-page-icon-cover {
   margin-left: auto;
@@ -347,6 +266,7 @@ use this to differentiate home page.
 }
 
 /*_________________*/
+/*EXTRA STYLING*/
 
 .notion-search-button {
   display: none !important;
@@ -360,7 +280,36 @@ use this to differentiate home page.
   display: unset;/*important for sidenotes*/
 }
 
+.notion {
+  font-weight:400;
+  font-family: 'Roboto';
+  font-size: 1rem;
+  line-height: 1.2;
+}
 
+.notion-title{
+  font-size: 3.052rem;
+}
+
+.notion-h{
+  margin-bottom: 0rem;
+  padding-bottom: 0rem;
+  margin-top: 1rem;
+  padding-top: 0rem;
+}
+
+.notion-h1{
+  font-size: 2.441rem;
+}
+
+.notion-h2{
+  font-size: 1.953rem;
+}
+
+.notion-h3{
+  font-size: 1.563rem;
+  line-height: 1;
+}
 
 .notion-page-scroller{
   /*align-items: unset;*/
@@ -377,5 +326,26 @@ use this to differentiate home page.
 
 */
 
+.notion-h {
+  width: 100%;
+}
+
+
+a {
+  text-decoration: none
+}
+
+a:hover {
+  text-decoration: none
+}
+
+
+a {
+  color: #186ad4
+}
+
+a:hover {
+  color: #186ad4
+}
 
 
