@@ -22,7 +22,11 @@
 }
 
 .index-page {
+/*  
   --notion-max-width: 900px;
+  
+use this to differentiate home page.  
+*/
 }
 
 .notion-text {

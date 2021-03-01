@@ -2,6 +2,7 @@
 
 window.onload = function () {
 
+    $('.notion-aside').remove(); //cleanup useless socials
 
     var np = $('.notion-page-content-inner').first();
 
@@ -42,6 +43,6 @@ window.onload = function () {
         npc.append(allnotes);
     }
 
-    np.sidenotes();
-
+    //np.sidenotes();
+    // I'll turn on sidenotes when I have figure out the css to it
 };
