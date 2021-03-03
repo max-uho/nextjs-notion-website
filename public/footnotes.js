@@ -7,7 +7,8 @@ window.onload = function () {
     $('.notion-aside').remove(); //cleanup useless socials
 
     var found = [],
-        rxp = /\[\^.*?\]/g,
+
+        rxp = /\^\[.*?\]/g,
         str = np.html(),
         curMatch;
 
