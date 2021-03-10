@@ -1,5 +1,7 @@
 /* SIZING ON BIGGER SCREENS */
 
+
+
 @media (min-width: 50rem) {
   .notion-page-content-inner aside {
     float: left;
@@ -78,5 +80,4 @@ sub {
   margin-top: 1.55556rem
 }
 */
-
 
